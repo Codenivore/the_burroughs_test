@@ -20,6 +20,7 @@ describe('testing is weekend function', () => {
       // exercise
       const functionReturn = IsWeekend(monday)
       // test
+      assert.strictEqual(functionReturn, false)
     })
     it('should return false for a Thursday', () => {
       // set up
@@ -27,6 +28,7 @@ describe('testing is weekend function', () => {
       // exercise
       const functionReturn = IsWeekend(thursday)
       // test
+      assert.strictEqual(functionReturn, false)
     })
   })
 
@@ -37,6 +39,7 @@ describe('testing is weekend function', () => {
       // exercise
       const functionReturn = IsWeekend(saturday)
       // test
+      assert.strictEqual(functionReturn, true)
     })
     it('should return true for a Sunday', () => {
       // set up
@@ -44,6 +47,7 @@ describe('testing is weekend function', () => {
       // exercise
       const functionReturn = IsWeekend(sunday)
       // test
+      assert.strictEqual(functionReturn, true)
     })
   })
 })
