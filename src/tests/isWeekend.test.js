@@ -9,7 +9,7 @@ describe('testing is weekend function', () => {
       // exercise
       const functionReturn = IsWeekend(invalidDate)
       // test
-      assert.strictEqual(functionReturn, 'Inalid input')
+      assert.strictEqual(functionReturn, 'Invalid input')
     })
   })
 
