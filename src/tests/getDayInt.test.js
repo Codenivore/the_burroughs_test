@@ -19,7 +19,7 @@ describe('function to get day int', () => {
       // exercise
       const functionReturn = GetDayInt(sunday)
       // test
-      assert.strictEqual()
+      assert.strictEqual(functionReturn, 0)
     })
     it('should return a 3 for Wednesday', () => {
       // set up
@@ -27,7 +27,7 @@ describe('function to get day int', () => {
       // exercise
       const functionReturn = GetDayInt(wednesday)
       // test
-      assert.strictEqual(functionReturn, functionReturn)
+      assert.strictEqual(functionReturn, 3)
     })
     it('should return a 5 for Friday', () => {
       // set up
@@ -35,7 +35,7 @@ describe('function to get day int', () => {
       // exercise
       const functionReturn = GetDayInt(friday)
       // test
-      assert.strictEqual(functionReturn)
+      assert.strictEqual(functionReturn, 5)
     })
   })
 })
