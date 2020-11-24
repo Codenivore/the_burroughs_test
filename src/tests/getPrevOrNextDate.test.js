@@ -15,7 +15,7 @@ describe('test getting previous or next date based on args passed to params', ()
 
     it('should handle invalid arg passed nextOrPrevious param', () => {
       // set up
-      const nextOrPreviousArg = 'test'
+      nextOrPreviousArg = 'test'
       // exercise
       const functionReturn = GetPrevOrNextDate(
         nextOrPreviousArg,
@@ -27,7 +27,7 @@ describe('test getting previous or next date based on args passed to params', ()
     })
     it('should handle invalid arg passed targetDay param', () => {
       // set up
-      const targetDayArg = 'star wars day'
+      targetDayArg = 'star wars day'
       // exercise
       const functionReturn = GetPrevOrNextDate(
         nextOrPreviousArg,
