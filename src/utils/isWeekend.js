@@ -1,5 +1,4 @@
 const IsValidDate = require('./isValidDateObject')
-const GetDayInt = require('./getDayInt')
 
 const isWeekend = (argDate) => {
   // if not a valid date not point going further so return out
@@ -7,7 +6,7 @@ const isWeekend = (argDate) => {
     return 'Invalid input'
   }
 
-  const dayInt = GetDayInt(argDate)
+  const dayInt = argDate.getDay()
 
   // if day int is a 0 (Sunday) or 6 (Saturday)
   if (dayInt === 0 || dayInt === 6) {
