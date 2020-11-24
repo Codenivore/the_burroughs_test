@@ -1,0 +1,35 @@
+{
+  "name": "the_burroughs_test",
+  "version": "1.0.0",
+  "description": "command line tool to apply business logic and output pay dates",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha src/tests/**/*.js --reporter dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Codenivore/the_burroughs_test"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "Nick McAlpine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Codenivore/the_burroughs_test/issues"
+  },
+  "homepage": "https://github.com/Codenivore/the_burroughs_test#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-mocha": "^8.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "prettier": "^2.2.0"
+  }
+}
