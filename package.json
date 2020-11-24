@@ -6,6 +6,11 @@
   "scripts": {
     "test": "nyc mocha src/tests/**/*.js --reporter dot"
   },
+  "nyc": {
+    "exclude": [
+      "src/tests/**/*.js"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Codenivore/the_burroughs_test"
@@ -31,5 +36,8 @@
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
     "prettier": "^2.2.0"
+  },
+  "dependencies": {
+    "commander": "^6.2.0"
   }
 }
