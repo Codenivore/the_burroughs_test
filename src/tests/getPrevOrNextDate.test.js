@@ -60,7 +60,11 @@ describe('test getting previous or next date based on args passed to params', ()
       const argDate = new Date('2020/12/01')
       const expectedDate = new Date('2020/12/08')
       // exercise
-      const functionReturn = GetPrevOrNextDate(nextOrPreviousArg)
+      const functionReturn = GetPrevOrNextDate(
+        nextOrPreviousArg,
+        targetDayArg,
+        argDate
+      )
       // test
       assert.deepStrictEqual(functionReturn, expectedDate)
     })
@@ -70,7 +74,11 @@ describe('test getting previous or next date based on args passed to params', ()
       const argDate = new Date('2020/12/15')
       const expectedDate = new Date('2020/12/18')
       // exercise
-      const functionReturn = GetPrevOrNextDate(nextOrPreviousArg)
+      const functionReturn = GetPrevOrNextDate(
+        nextOrPreviousArg,
+        targetDayArg,
+        argDate
+      )
       // test
       assert.deepStrictEqual(functionReturn, expectedDate)
     })
@@ -85,7 +93,11 @@ describe('test getting previous or next date based on args passed to params', ()
       const argDate = new Date('2020/12/01')
       const expectedDate = new Date('2020/11/24')
       // exercise
-      const functionReturn = GetPrevOrNextDate(nextOrPreviousArg)
+      const functionReturn = GetPrevOrNextDate(
+        nextOrPreviousArg,
+        targetDayArg,
+        argDate
+      )
       // test
       assert.deepStrictEqual(functionReturn, expectedDate)
     })
@@ -95,7 +107,11 @@ describe('test getting previous or next date based on args passed to params', ()
       const argDate = new Date('2020/12/15')
       const expectedDate = new Date('2020/12/11')
       // exercise
-      const functionReturn = GetPrevOrNextDate(nextOrPreviousArg)
+      const functionReturn = GetPrevOrNextDate(
+        nextOrPreviousArg,
+        targetDayArg,
+        argDate
+      )
       // test
       assert.deepStrictEqual(functionReturn, expectedDate)
     })

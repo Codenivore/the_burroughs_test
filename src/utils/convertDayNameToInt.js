@@ -1,7 +1,3 @@
-const { requiredOption } = require('commander')
-
-const IsValidDate = require('./isValidDateObject')
-
 const convertDayNameToInt = (dayName) => {
   const correctOrderedDays = [
     'sunday',
@@ -14,7 +10,7 @@ const convertDayNameToInt = (dayName) => {
   ]
 
   if (typeof dayName !== 'string') {
-    return 'Inalid input'
+    return 'Invalid input'
   }
 
   const lowerCasedDay = dayName.toLowerCase()
