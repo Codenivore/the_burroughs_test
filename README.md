@@ -11,9 +11,9 @@ Command line utility to provide either a standard 12 month report of when to pay
 
 ### Commands Cheat Sheet
 
-- node index -h: Shows commans and options
-- node index sr: Get standard 12 month report without being asked any questions
-- node index cr: Custom report. It will ask you to provide your desired start date and the duration.
+- `node index -h`: Shows commans and options
+- `node index sr`: Get standard 12 month report without being asked any questions
+- `node index cr`: Custom report. It will ask you to provide your desired start date and the duration.
 
 ### Potential Feature Enhancement Considered
 
