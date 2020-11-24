@@ -10,7 +10,10 @@ describe('should make sure getting report works', () => {
       // exercise
       const functionReturn = GetReport()
       // test
-      assert.strictEqual(functionReturn.isArray(), true)
+      assert.strictEqual(
+        Object.prototype.toString.call(functionReturn),
+        '[object Array]'
+      )
     })
     it('should return 12 months worth', () => {
       // set up
@@ -77,14 +80,11 @@ describe('should make sure getting report works', () => {
     it('should start at month of date passed in', () => {
       // set up
       const dateFrom = new Date('2020/11/24')
-      const monthsTo = 10
+      const monthsTo = 11
       // exercise
       const functionReturn = GetReport({ dateFrom, monthsTo })
       // test
-      assert.strictEqual(
-        functionReturn[0].payDay.getMonth(),
-        dateFrom.getMonth()
-      )
+      assert.strictEqual(functionReturn[0].month, 'Nov')
     })
   })
 })
