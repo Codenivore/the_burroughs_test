@@ -15,7 +15,7 @@ Command line utility to provide either a standard 12 month report of when to pay
 - `node index sr`: Get standard 12 month report without being asked any questions
 - `node index cr`: Custom report. It will ask you to provide your desired start date and the duration.
 
-### Potential Feature Enhancement Considered
+### Potential feature enhancements considered
 
 - Include bank holidays but then the user's locale would need to be considered too.
 - Could make a command to output the report to a text or CSV file.
